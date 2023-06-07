@@ -1,0 +1,220 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,
+em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,
+caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,
+nav,output,ruby,section,summary,time,mark,audio,video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* CSS RESET END */
+
+body {
+    font-family: 'Instrument Sans', sans-serif;
+    background-color: #FBFBFA
+}
+
+.header {
+    position: relative;
+    overflow-x: hidden;
+    font-family: 'Bruno Ace SC', cursive;
+    height: 100vh;
+
+    .image {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        filter: blur(1.5px);
+    }
+
+    .container {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: #fff;
+        text-align: center;
+        width: 80vw;
+        z-index: 1;
+
+        .titre {
+            font-family: 'Racing Sans One', cursive;
+            font-style: italic;
+            transform: rotate(-7deg);
+            font-size: 60px;
+            margin-bottom: 40px;
+            line-height: 1.5;
+            text-shadow: black 1px 2px 4px;
+        }
+
+        .texte {
+            font-size: 26px;
+            line-height: 1.2;
+            text-shadow: black 1px 1px 2px;
+        }
+    }
+}
+
+
+.main {
+
+    .section {
+        width: 100vw;
+        margin-left: auto;
+        margin-right: auto;
+        padding-top: 15%;
+        padding-bottom: 15%;
+        padding-left: 8%;
+        padding-right: 8%;
+        box-sizing: border-box;
+
+        &:nth-child(2) {
+            background-color: #19152b;
+            color: white;
+        }
+        &:nth-child(4) {
+            background-color: #1f2617;
+            color: white;
+        }
+        &:nth-child(6) {
+            background-color: #261f17;
+            color: white;
+        }
+        &:nth-child(8) {
+            background-color: #251726;
+            color: white;
+        }
+    }
+
+    .titre--h2 {
+        font-family: 'Sriracha', cursive;
+        font-size: 28px;
+        line-height: 1.5;
+        margin-bottom: 14px;
+    }
+
+    .titre--h3 {
+        font-style: none;
+        line-height: 1.5;
+        font-size: 22px;
+        margin-bottom: 11px;
+        text-decoration: none;
+        font-style: italic;
+        text-decoration:underline;
+    }
+
+    .texte {
+        font-size: 17px;
+        line-height: 1.5;
+        margin-bottom: 18px;
+    }
+
+    .liste {
+        margin-bottom: 18px;
+        font-size: 16px;
+        margin-left: 5%;
+        li {
+            line-height: 1.3;
+            margin-top: 7px;
+            margin-bottom: 7px;
+            &::before {
+                content: "->";
+                padding-right: 8px;
+            }
+        }
+
+        ol {
+            li {
+                &::before {
+                    content: "->";
+                    padding-right: 8px;
+                }
+            }
+            margin-left: 10%;
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (min-width: 600px) {
+    picture {
+        max-width: 100%;
+        height: auto;
+    }
+
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    h1,
+    p {
+        font-size: 32px;
+        padding: 30px;
+    }
+}

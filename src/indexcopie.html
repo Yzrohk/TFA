@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Accueil</title>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  <meta name="description" content="">
+  <!-- Meta Partage -->
+  <!-- Twitter Card data -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@leonardisebastien">
+  <meta name="twitter:creator" content="@leonardisebastien">
+  <meta name="twitter:title" content="Site de présentation du TFA - Sébastien Leonardi - DWT - HEAJ">
+  <meta name="twitter:description"
+    content="Page principale du site web de présentation du TFA par Sébastien Leonardi - DWT - HEAJ">
+  <meta name="twitter:image" content="#">
+
+  <!-- Open Graph data -->
+  <meta property="og:site_name" content="Site de présentation du TFA - Sébastien Leonardi - DWT - HEAJ">
+  <meta property="og:title" content="Site de présentation du TFA - Sébastien Leonardi - DWT - HEAJ">
+  <meta property="og:description"
+    content="Page principale du site web de présentation du TFA par Sébastien Leonardi - DWT - HEAJ">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="http://sebastien-leonardi.be">
+  <meta property="og:image" content="#">
+  <meta property="og:image:width" content="1800">
+  <meta property="og:image:height" content="945">
+  <!-- Favicon -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Police d'écriture -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Racing+Sans+One&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Sriracha&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles/app.css">
+  <script src="scripts/app.js" defer></script>
+</head>
+
+<body class="body">
+  <header class="header">
+    <div class="container container--header">
+      <h1 class="titre titre--h1">Mot'au top</h1>
+      <p class="texte texte--header">Organisez, Participez, Explorez!</p>
+    </div>
+    <picture class="picture">
+      <source media="(max-width: 600px)" srcset="assets/images/header_1.jpg, assets/images/header_1@2x.jpg 2x">
+      <source media="(min-width: 601px)"
+        srcset="assets/images/header_2_default.jpg, assets/images/header_2_default.jpg 2x">
+      <img class="image" src="assets/images/header_2_default.jpg" srcset="assets/images/header_2_default.jpg 2x"
+        alt="Photos de motard roulant sur une route">
+    </picture>
+  </header>
+
+  <main class="main">
+    <section class="section section--intro">
+      <h2 class="titre titre--h2">Avant de démarrer</h2>
+      <p class="texte">Pour réaliser ce projet, j'ai dû passer par plusieurs étapes que je développerai en plusieurs sections.</p>
+      <p class="texte">Il y aura au total 6 points importants, dans lesquels je parlerai des rencontres avec les utilisateurs, de leurs
+        problèmes identifiés, des solutions hypothétiques afin d'y remédier, d'une présentation des modules développés,
+        de la préparation à la présentation du TFA ainsi que des faits ou des recherches expliquant mes choix.</p>
+      <p class="texte">Bonne route!</p>
+    </section>
+
+    <section class="section section--premices">
+      <h2 class="titre titre--h2">Les prémices</h2>
+      <p class="texte">Après avoir choisi l'association, j'ai pu facilement contacter un administrateur de l'association, qui m'a
+        premièrement expliqué tout un tas de choses à propos de celle-ci.
+      </p> <p class="texte">Grâce à lui, j'ai pu contacter un très grand
+        nombre d'utilisateurs ainsi que d'autres membres de l'administration, au moyen d'un google form. Cela m'a permis
+        de récolter un nombre important de réponses en peu de temps. </p> 
+        <p class="texte">L'utilisation d'un google form m'a beaucoup aidé,
+        car, grâce au moyen d'un feedback présent sur le formulaire lui-même, je pouvais en permanence améliorer mes
+        questions, ou en ajouter davantage.</p>
+    </section>
+
+    <section class="section section--problemes">
+      <h2 class="titre titre--h2">Je cherche les problèmes</h2>
+      <h3 class="titre titre--h3">Mais comment?</h3>
+      <p class="texte">Comme dit précédemment, la méthode principale utilisée a été au biai d'un google form.</p>
+        <p class="texte">En utilisant parfois des
+        réponses prédéfinies, j'ai pu obtenir des pourcentages ce qui a facilité l'identification de problème, mais j'ai
+        également laissé la possibilité d'écrire des réponses personnelles, ce qui a contribué à l'addition de
+        problèmes.</p>
+      <div class="secondePartie">
+        <h3 class="titre titre--h3">Nous avons quelques problèmes (tant mieux, non?)</h3>
+        <p class="texte">Voici une liste des principaux problèmes auxquels sont confrontés les utilisateurs&nbsp;:</p>
+        <ul class="liste liste--ul">
+          <li>Utilisation du site web difficile pour un appareil mobile.</li>
+          <li>Utilisation du site web difficile pour certaines personnes séniors dû à leur lacune en technologie. (D'après leurs propres dires).</li>
+          <li>Utilisation difficile du site web en moto.</li>
+          <li>Difficile de savoir lorsqu'une activité est modifiée.</li>
+          <li>Impossible de prévenir l'organisateur d'une activité, via le site web, lorsqu'un problème survient.</li>
+          <li>Balade moto parfois trop longue, avec le mauvais nombres d'arrêts.</li>
+          <li>Parfois des groupes différents lors de balade motos ce qui gâche l'expérience de certains.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section section--hypotheses">
+      <h2 class="titre titre--h2">Hypothèses</h2>
+      <h3 class="titre titre--h3">Les hypothèses présentes</h3>
+      <p class="texte">Une fois les problèmes identifiés, il était temps de dresser une liste d'hypothèses&nbsp;: </p>
+      <ul class="liste liste--ul">
+        <li>Création d'une application mobile simple et efficace</li>
+        <li>Ajouts de fonctionnalités telles que :
+          <ol class="liste liste--ol">
+            <li>Un bouton pour signaler un problème pendant une activité</li>
+            <li>Un chat par activités pour faciliter la communication</li>
+            <li>Un lien vers google map avec l'adresse de début et de fin de l'activité</li>
+            <li>Un système de notification lorsqu'une activité est modifiée</li>
+          </ol>
+        </li>
+        <li>L'application mobile doit pouvoir être utilisée en moto (permettre d'appuyer sur des boutons avec des gants)
+        </li>
+        <li>Précision du type de balade moto (Ex: si dépassements autorisés, si rouler uniquement, nombre de pauses
+          prévues)</li>
+        <li>Pouvoir s'inscrire à une activité et que celle-ci soit stocké dans une liste pour l'utilisateur</li>
+        <li>Pouvoir modifier une activité et en être tenu au courrant</li>
+      </ul>
+      <div class="secondePartie">
+        <h3 class="titre titre--h3">Justification des hypothèses</h3>
+        <p class="texte">Ces hypothèses se basent sur les problèmes des utilisateurs. La majorité des activités auxquelles les gens participent étant des balades motos, il faut insister sur la facilité à utiliser l'application en étant en moto.</p>
+      </div>
+    </section>
+
+    <section class="section section--modules">
+      <h2 class="titre titre--h2">Mais qu'est-ce que ça donne?</h2>
+      <p class="texte">L'application permettra donc à quelqu'un de s'inscrire ou de se connecter. Il sera alors redirigé vers le menu principal. Partons du fait que l'on est un utilisateur. Si c'est ma première fois sur l'application, il y aura dans le menu principal toutes les dernières activités créées avec des informations telles que le type de l'activité, la date, etc. Pour chaque activité, il y aura un bouton “s'inscrire”, “trajet google map” ou “plus d'informations”. En revanche, si j'ai déjà des activités auxquelles je suis inscrit ou intéressé, il y aura première une liste regroupant quelques-unes de ces activités, avec une lien ou bouton permettant de voir la liste complète, et ensuite viendrait la liste des activités récemment créées. Il y aura également un bouton pour filtrer les recherches. Un nom sympa pourrait être “Mot'au top”, un petit jeu de mot. Il y aura également un bouton  pour consulter son profil, et un bouton notification.</p>
+    </section>
+
+    <section class="section section--presentation">
+      <h2 class="titre titre--h2">Préparation à la présentation</h2>
+      <p class="texte">...</p>
+    </section>
+
+    <section class="section section--faits">
+      <h2 class="titre titre--h2">Y'a-t-il quelque chose d'autre à savoir?</h2>
+      <h3 class="titre titre--h3">Des concurrents?</h3>
+      <p class="texte">Il existe maintenant de plus en plus d'applications de navigation pour les motards mais encore très peu d'applications se basent sur des listes d'activités. La plupart du temps, ces applications permettent d'avoir un tracé d'un parcours. J'ai difficilement trouvé des applications semblables aux hypothèses que j'ai élaborées, ou du moins, elles étaient payantes.</p>
+      <div class="secondePartie">
+        <h3 class="titre titre--h3">Plutôt applications ou GPS ?</h3>
+        <p class="texte">À côté de ça, un bon nombre de motards préfèrent désormais utiliser leur téléphone comme système de navigation, plutôt qu'un GPS. C'est plus confortable, c'est plus pratique et c'est surtout de plus en plus possible. De nos jours, il existe même des gants permettant d'interagir avec l'écran du téléphone. Même si je décourage l'utilisation du téléphone en roulant, les applications restent préférées par les motards lorsqu'ils sont sur la route ou à l'arrêt. L'application hypothétique que j'ai élaborée permet d'utiliser la navigation en roulant, ou simplement d'être utilisée à l'arrêt.</p>
+      </div>
+    </section>
+
+    <section class="section section--conclusion">
+      <h2 class="titre titre--h2">Conclusion</h2>
+      <p class="texte">...</p>
+    </section>
+  </main>
+
+  <footer class="footer">
+  </footer>
+
+</body>
+
+</html>

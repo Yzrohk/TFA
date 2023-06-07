@@ -30,13 +30,59 @@
   <!-- Favicon -->
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <link rel="stylesheet" href="styles/app.css">
+  <!-- Police d'écriture -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Racing+Sans+One&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Sriracha&display=swap" rel="stylesheet">
 
+  <link rel="stylesheet" href="styles/app.css">
   <script src="scripts/app.js" defer></script>
 </head>
 
-<body>
-  
+<body class="body">
+  <header class="header">
+    <div class="container container--header">
+      <h1 class="titre titre--h1">Mot'au top</h1>
+      <p class="texte texte--header">Organisez, Participez, Explorez!</p>
+    </div>
+    <picture class="picture">
+      <source media="(max-width: 600px)" srcset="assets/images/header_1.jpg, assets/images/header_1@2x.jpg 2x">
+      <source media="(min-width: 601px)"
+        srcset="assets/images/header_2_default.jpg, assets/images/header_2_default.jpg 2x">
+      <img class="image" src="assets/images/header_2_default.jpg" srcset="assets/images/header_2_default.jpg 2x"
+        alt="Photos de motard roulant sur une route">
+    </picture>
+  </header>
+
+  <main class="main">
+    <section class="section section--intro">
+      <h2 class="titre titre--h2">Avant de démarrer</h2>
+      <p class="texte">Pour réaliser ce projet, j'ai dû passer par plusieurs étapes que je développerai en plusieurs sections.</p>
+      <p class="texte">Il y aura au total 6 points importants, dans lesquels je parlerai des rencontres avec les utilisateurs, de leurs
+        problèmes identifiés, des solutions hypothétiques afin d'y remédier, d'une présentation des modules développés,
+        de la préparation à la présentation du TFA ainsi que des faits ou des recherches expliquant mes choix.</p>
+      <p class="texte">Bonne route!</p>
+    </section>
+
+    <section class="section section--premices">
+      <h2 class="titre titre--h2">Les prémices</h2>
+      <p class="texte">Après avoir choisi l'association, j'ai pu facilement contacter un administrateur de l'association, qui m'a
+        premièrement expliqué tout un tas de choses à propos de celle-ci.
+      </p> <p class="texte">Grâce à lui, j'ai pu contacter un très grand
+        nombre d'utilisateurs ainsi que d'autres membres de l'administration, au moyen d'un google form. Cela m'a permis
+        de récolter un nombre important de réponses en peu de temps. </p> 
+        <p class="texte">L'utilisation d'un google form m'a beaucoup aidé,
+        car, grâce au moyen d'un feedback présent sur le formulaire lui-même, je pouvais en permanence améliorer mes
+        questions, ou en ajouter davantage.</p>
+    </section>
+  </main>
+
+  <footer class="footer">
+  </footer>
+
 </body>
 
 </html>
