@@ -29,6 +29,7 @@
   <meta property="og:image:height" content="945">
   <!-- Favicon -->
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/x-icon" href="assets/images/favicon.ico">
 
   <!-- Police d'écriture -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -47,15 +48,15 @@
   <header class="header">
     <a href="index.html">
       <div class="container container--header">
-        <h1 class="titre titre--h1">Mot'au top</h1>
+        <h1 class="titre titre--header">Mot'au top</h1>
         <p class="texte texte--header">Organisez, Participez, Explorez!</p>
       </div>
       <picture class="picture">
         <source media="(max-width: 600px)" srcset="assets/images/header_1.jpg, assets/images/header_1@2x.jpg 2x">
         <source media="(min-width: 601px)"
           srcset="assets/images/header_2_default.jpg, assets/images/header_2_default.jpg 2x">
-        <img class="image" src="assets/images/header_2_default.jpg" srcset="assets/images/header_2_default.jpg 2x"
-          alt="Photos de motard roulant sur une route">
+        <img class="image image--header" src="assets/images/header_2_default.jpg"
+          srcset="assets/images/header_2_default.jpg 2x" alt="Photos de motard roulant sur une route">
       </picture>
     </a>
   </header>
@@ -64,13 +65,17 @@
     <section class="section section--premices">
       <h2 class="titre titre--h2">Les&nbsp;prémices</h2>
       <h3 class="titre titre--h3">Tout projet commence par un début.</h3>
-      <p class="texte">Effectivement, chaque projet débute quelque part.</p>
-      <p class="texte">Notre début à nous, était tout d'abord de réfléchir à une association. Dur fut le choix, des
-        associations, car il y en a beaucoup. Association pour les gens malades, les animaux, la nature, et j'en passe.
-      </p>
-      <p class="texte">Finalement, j'ai décidé de choisir une association de motards (oui, ça existe) qui organisent des
-        activités pour les fans de motos BMW.</p>
-      <div class="image-container">
+      <div class="section__texte">
+        <p class="texte">Effectivement, chaque projet débute quelque part.</p>
+        <p class="texte">Notre début à nous, était tout d'abord de réfléchir à une association. Dur fut le choix, des
+          associations, car il y en a beaucoup. Association pour les gens malades, les animaux, la nature, et j'en
+          passe.
+        </p>
+        <p class="texte">Finalement, j'ai décidé de choisir une association de motards (oui, ça existe) qui organisent
+          des
+          activités pour les fans de motos BMW.</p>
+      </div>
+      <div class="container--image">
         <img class="image" src="assets/images/header_2_default.jpg" alt="Description de l'image">
       </div>
     </section>
@@ -78,14 +83,17 @@
     <section class="section section--rencontres">
       <h2 class="titre titre--h2">Il est temps de contacter les utilisateurs!</h2>
       <h3 class="titre titre--h3">Et ce ne fut pas spécialement très dur.</h3>
-      <p class="texte">J'ai pu contacter aisément quelqu'un de l'administration qui a été à l'écoute de mes
-        explications, et qui a facilement compris le but du
-        projet.</p>
-      <p class="texte">Il était vraiment gentil et m'en a appris davantage sur l'association. Il m'a montré ce qu'ils
-        faisaient comme activités, et effectivement, ils font vraiment beaucoup de balades motos.</p>
-      <p class="texte">Ayant la possibilité de contacter tous les membres, cette personne m'a aidé à entrer en contact
-        avec certains d'entre eux.</p>
-      <div class="image-container">
+      <div class="section__texte">
+        <p class="texte">J'ai pu contacter aisément quelqu'un de l'administration qui a été à l'écoute de mes
+          explications, et qui a facilement compris le but du
+          projet.</p>
+        <p class="texte">Il était vraiment gentil et m'en a appris davantage sur l'association. Il m'a montré ce qu'ils
+          faisaient comme activités, et effectivement, ils font vraiment beaucoup de balades motos.</p>
+        <p class="texte">Ayant la possibilité de contacter tous les membres, <a class="redirection" href="#">cette
+            personne m'a aidé à entrer en contact
+            avec certains d'entre eux.</a></p>
+      </div>
+      <div class="container--image">
         <img class="image" src="assets/images/header_2_default.jpg" alt="Description de l'image">
       </div>
     </section>
@@ -93,60 +101,74 @@
     <section class="section section--problemes">
       <h2 class="titre titre--h2">Mais est-ce que les motards ont des problèmes?</h2>
       <h3 class="titre titre--h3">Eh bien oui.</h3>
-      <p class="texte">Pour certains, la vie est belle et ne semblait pas encombrée de problèmes vis-à-vis de
-        l'association.</p>
-      <p class="texte">Mais ce n'est pas le cas pour tout le monde. Certains d'entre eux ont effectivement des problèmes
-        ou du mal avec certaines choses.</p>
-      <p class="texte">Par exemple&nbsp;:</p>
-      <ul class="liste liste--ul">
-        <li class="liste__el">Du mal à parvenir aux activités de l'association.</li>
-        <li class="liste__el">Des problèmes internes lors de trips motos.</li>
-        <li class="liste__el"><a href="#" class="redirection">Et bien d'autres.</a></li>
-      </ul>
-      <div class="image-container">
+      <div class="section__texte">
+        <p class="texte">Pour certains, la vie est belle et ne semblait pas encombrée de problèmes vis-à-vis de
+          l'association.</p>
+        <p class="texte">Mais ce n'est pas le cas pour tout le monde. Certains d'entre eux ont effectivement des
+          problèmes
+          ou du mal avec certaines choses.</p>
+        <p class="texte">Par exemple&nbsp;:</p>
+        <ul class="liste liste--ul">
+          <li class="liste__el">Du mal à parvenir aux activités de l'association.</li>
+          <li class="liste__el">Des problèmes internes lors de trips motos.</li>
+          <li class="liste__el"><a href="#" class="redirection">Et bien d'autres.</a></li>
+        </ul>
+      </div>
+      <div class="container--image">
         <img class="image" src="assets/images/header_2_default.jpg" alt="Description de l'image">
       </div>
     </section>
 
-    <section class="section section--hypotheses">
+    <section class="section section--hypotheses section--sansImage">
       <h2 class="titre titre--h2">Je réfléchis à quelque chose qui pourrait les aider.</h2>
       <h3 class="titre titre--h3">J'élabore plusieurs hypothèses.</h3>
-      <p class="texte">J'ai pu élaborer tout un tas d'hypothèses grâce aux nombreuses réponses que j'ai reçues.</p>
-      <p class="texte">Vous pourrez, <a href="#" class="redirection">en suivant ce lien</a>, découvrir mes hypothèses
-        auxquelles j'ai réfléchi, en passant par les premières jusqu'aux dernières.</p>
+      <div class="section__texte section__texte--sansImage">
+        <p class="texte">J'ai pu élaborer tout un tas d'hypothèses grâce aux nombreuses réponses que j'ai reçues.</p>
+        <p class="texte">Vous pourrez, <a href="#" class="redirection">en suivant ce lien</a>, découvrir mes hypothèses
+          auxquelles j'ai réfléchi, en passant par les premières jusqu'aux dernières.</p>
+      </div>
+
     </section>
 
     <section class="section section--modules">
       <h2 class="titre titre--h2">Et donc, qu'est-ce que je propose?</h2>
       <h3 class="titre titre--h3">Doucement, j'y viens.</h3>
-      <p class="texte">Dans la logique des choses, et en respectant les réponses reçues, l'idée d'une application est la
-        plus plausible.</p>
-      <p class="texte">Il faut bien la penser, car très peu de concurrents, du moins gratuits, proposent une idée comme
-        celle-ci.</p>
-      <p class="texte">J'ai donc rédiger <a href="#" class="redirection">une liste d'outils</a> nécessaires au bon
-        fonctionnement de cette application. Évidemment, toute l'application ne sera pas décrite, mais ce qu'il y a
-        de plus important y est.</p>
-      <div class="image-container">
+      <div class="section__texte">
+        <p class="texte">Dans la logique des choses, et en respectant les réponses reçues, l'idée d'une application est
+          la
+          plus plausible.</p>
+        <p class="texte">Il faut bien la penser, car très peu de concurrents, du moins gratuits, proposent une idée
+          comme
+          celle-ci.</p>
+        <p class="texte">J'ai donc rédiger <a href="#" class="redirection">une liste d'outils</a> nécessaires au bon
+          fonctionnement de cette application. Évidemment, toute l'application ne sera pas décrite, mais ce qu'il y a
+          de plus important y est.</p>
+      </div>
+      <div class="container--image">
         <img class="image" src="assets/images/header_2_default.jpg" alt="Description de l'image">
       </div>
     </section>
 
-    <section class="section section--presentation">
+    <section class="section section--presentation section--sansImage">
       <h2 class="titre titre--h2">Qu'en penseriez-vous?</h2>
       <h3 class="titre titre--h3">J'ai hâte de le savoir.</h3>
-      <p class="texte">Ce sera le moment où je présenterai de vive voix ce que j'ai fait durant ce projet.</p>
-      <p class="texte">Aidé d'un support visuel, je pourrais enfin en parler par la voix, plutôt que par écrit.</p>
-      <p class="texte"><a href="#" class="redirection">Voici ce que j'ai fait pour préparer ma présentation.</a></p>
+      <div class="section__texte section__texte--sansImage">
+        <p class="texte">Ce sera le moment où je présenterai de vive voix ce que j'ai fait durant ce projet.</p>
+        <p class="texte">Aidé d'un support visuel, je pourrais enfin en parler par la voix, plutôt que par écrit.</p>
+        <p class="texte"><a href="#" class="redirection">Voici ce que j'ai fait pour préparer ma présentation.</a></p>
+      </div>
     </section>
 
     <section class="section section--recherches">
       <h2 class="titre titre--h2">Des faits et des recherches.</h2>
       <h3 class="titre titre--h3">Des faits et recherches qui m'ont aidé dans ma démarche.</h3>
-      <p class="texte">Pour la fin, je présente des faits qui m'ont aidé dans l'aboutissement de ce projet.</p>
-      <p class="texte">Ces recherches m'ont permis de me focaliser plus facilement sur certaines hypothèses plutôt que
-        d'autres. Elles m'ont également permis de comprendre davantage sur certaines problèmatiques qu'énoncaient les
-        utilisateurs.</p>
-      <div class="image-container">
+      <div class="section__texte">
+        <p class="texte">Pour la fin, je présente des faits qui m'ont aidé dans l'aboutissement de ce projet.</p>
+        <p class="texte">Ces recherches m'ont permis de me focaliser plus facilement sur certaines hypothèses plutôt que
+          d'autres. Elles m'ont également permis de comprendre davantage sur certaines problèmatiques qu'énoncaient les
+          utilisateurs.</p>
+      </div>
+      <div class="container--image">
         <img class="image" src="assets/images/header_2_default.jpg" alt="Description de l'image">
       </div>
     </section>
@@ -154,14 +176,14 @@
     <section class="section section--aboutissement">
       <h2 class="titre titre--h2">L'aboutissement.</h2>
       <h3 class="titre titre--h3">Un projet sans conclusion est-il un projet?</h3>
-      <p class="texte">Ce projet a été un chemin d'épreuves. Malgré certaines épreuves de la vie, j'ai tenté de prendre
-        ce projet le plus à coeur possible. Je pense avoir choisis la meilleure association que je pouvais. Pouvoir
-        tenter d'aider des gens au travers de ce projet m'a plu même si au début, je restais assez dubitatif vis à vis
-        de ce travail. J'avais du mal à comprendre le concept et ce qui était réellement attendu. Mais avec le temps,
-        j'ai pu voir les raisons de pourquoi ce travail est important.</p>
-      <p class="texte">J'ai pu compter sur des utilisateurs compréhensibles, et ravis de pouvoir participer à ce projet
-        en répondant aux questions.</p>
-      <div class="image-container">
+      <div class="section__texte">
+        <p class="texte">Ce projet a été un chemin d'épreuves. J'ai tenté de prendre ce projet le plus à coeur possible.
+          Je pense avoir choisis la meilleure association que je pouvais. Pouvoir
+          tenter d'aider des gens au travers de ce projet m'a plu même si au début, je restais assez dubitatif vis à vis
+          de ce travail. J'avais du mal à comprendre le concept et ce qui était réellement attendu. Mais avec le temps,
+          j'ai pu voir les raisons de pourquoi ce travail est important.</p>
+      </div>
+      <div class="container--image">
         <img class="image" src="assets/images/header_2_default.jpg" alt="Description de l'image">
       </div>
     </section>

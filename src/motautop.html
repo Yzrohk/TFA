@@ -47,32 +47,35 @@
   <header class="header">
     <a href="index.html">
       <div class="container container--header">
-        <h1 class="titre titre--h1">Mot'au top</h1>
+        <h1 class="titre titre--header">Mot'au top</h1>
         <p class="texte texte--header">Organisez, Participez, Explorez!</p>
       </div>
       <picture class="picture">
         <source media="(max-width: 600px)" srcset="assets/images/header_1.jpg, assets/images/header_1@2x.jpg 2x">
         <source media="(min-width: 601px)"
           srcset="assets/images/header_2_default.jpg, assets/images/header_2_default.jpg 2x">
-        <img class="image" src="assets/images/header_2_default.jpg" srcset="assets/images/header_2_default.jpg 2x"
+        <img class="image image--header" src="assets/images/header_2_default.jpg" srcset="assets/images/header_2_default.jpg 2x"
           alt="Photos de motard roulant sur une route">
       </picture>
     </a>
   </header>
 
-  <main class="main">
+  <main class="main main--motautop">
     <section class="section section--intro">
       <h2 class="titre titre--h2">Avant de démarrer</h2>
-      <p class="texte">Pour réaliser ce projet, j'ai dû passer par plusieurs étapes que je développerai en plusieurs sections.</p>
-      <p class="texte">Il y aura au total 6 points importants, dans lesquels je parlerai des rencontres avec les utilisateurs, de leurs
-        problèmes identifiés, des solutions hypothétiques afin d'y remédier, d'une présentation des modules développés,
-        de la préparation à la présentation du TFA ainsi que des faits ou des recherches expliquant mes choix.</p>
-      <p class="texte">Bonne route!</p>
+      <div class="section__texte">
+        <p class="texte">Pour réaliser ce projet, j'ai dû passer par plusieurs étapes que je développerai en plusieurs sections.</p>
+        <p class="texte">Il y aura au total 6 points importants, dans lesquels je parlerai des rencontres avec les utilisateurs, de leurs
+          problèmes identifiés, des solutions hypothétiques afin d'y remédier, d'une présentation des modules développés,
+          de la préparation à la présentation du TFA ainsi que des faits ou des recherches expliquant mes choix.</p>
+        <p class="texte">Bonne route!</p>
+      </div>
     </section>
 
     <section class="section section--premices">
       <h2 class="titre titre--h2">Rencontres</h2>
-      <p class="texte">Après avoir choisi l'association, j'ai pu facilement contacter un administrateur de l'association, qui m'a
+      <div class="section__texte">
+        <p class="texte">Après avoir choisi l'association, j'ai pu facilement contacter un administrateur de l'association, qui m'a
         premièrement expliqué tout un tas de choses à propos de celle-ci. Notamment ce que faisait l'association, de qui étaient composés les membres, leurs passions, et plein d'autres choses.</p> 
         <p class="texte">Grâce à lui, j'ai pu contacter un très grand
         nombre d'utilisateurs ainsi que d'autres membres de l'administration, au moyen d'un google form. Cela m'a permis
@@ -81,70 +84,84 @@
         questions, ou en ajouter davantage.</p>
         <p class="texte">L'utilisation d'un google form est rapide et efficace. Comme dit précédemment, on peut toucher un bon nombre de personnes, sans spécialement prendre de rendez-vous, prendre de leurs précieux temps, devoir se déplacer dans toute la Belgique.</p>
         <p class="texte">De plus, les utilisateurs pouvaient répondre comme bon leur semblait et semblait safisfaits de l'utilisation de cet outil.</p>
+        <p class="texte">En dehors du google form, j'ai pu brièvement interroger un ou deux membres qui ont pu me donner un rapide ressenti.</p>
+      </div>
     </section>
 
     <section class="section section--problemes">
       <h2 class="titre titre--h2">Je cherche les problèmes</h2>
       <h3 class="titre titre--h3">Mais comment?</h3>
-      <p class="texte">Comme dit précédemment, la méthode principale utilisée a été au biai d'un google form.</p>
+      <div class="section__texte">
+        <p class="texte">Comme dit précédemment, la méthode principale utilisée a été au biai d'un google form.</p>
         <p class="texte">En utilisant parfois des
         réponses prédéfinies, j'ai pu obtenir des pourcentages ce qui a facilité l'identification de problème, mais j'ai
         également laissé la possibilité d'écrire des réponses personnelles, ce qui a contribué à l'addition de
         problèmes, puisqu'un bon nombre d'utilisateurs utilisaient cette option.</p>
-      <div class="secondePartie">
-        <h3 class="titre titre--h3">Nous avons quelques problèmes (tant mieux, non?)</h3>
-        <p class="texte">Voici une liste des principaux problèmes auxquels sont confrontés les utilisateurs&nbsp;:</p>
-        <ul class="liste liste--ul">
-          <li class="liste__el">Utilisation du site web difficile pour un appareil mobile.</li>
-          <li class="liste__el">Utilisation du site web difficile pour certaines personnes séniors dû à leur lacune en technologie. (D'après leurs propres dires).</li>
-          <li class="liste__el">Utilisation difficile du site web en moto.</li>
-          <li class="liste__el">Difficile de savoir lorsqu'une activité est modifiée.</li>
-          <li class="liste__el">Impossible de prévenir l'organisateur d'une activité, via le site web, lorsqu'un problème survient.</li>
-          <li class="liste__el">Balade moto parfois trop longue, avec le mauvais nombres d'arrêts.</li>
-          <li class="liste__el">Parfois des groupes différents lors de balade motos ce qui gâche l'expérience de certains.</li>
-        </ul>
+      </div>
+      <div class="section__texte">
+        <div class="secondePartie">
+          <h3 class="titre titre--h3">Nous avons quelques problèmes (tant mieux, non?)</h3>
+          <p class="texte">Voici une liste des principaux problèmes auxquels sont confrontés les utilisateurs&nbsp;:</p>
+          <ul class="liste liste--ul">
+            <li class="liste__el">Utilisation du site web difficile pour un appareil mobile.</li>
+            <li class="liste__el">Utilisation du site web difficile pour certaines personnes séniors dû à leur lacune en technologie. (D'après leurs propres dires).</li>
+            <li class="liste__el">Utilisation difficile du site web en moto.</li>
+            <li class="liste__el">Difficile de savoir lorsqu'une activité est modifiée.</li>
+            <li class="liste__el">Impossible de prévenir l'organisateur d'une activité, via le site web, lorsqu'un problème survient.</li>
+            <li class="liste__el">Balade moto parfois trop longue, avec le mauvais nombres d'arrêts.</li>
+            <li class="liste__el">Parfois des groupes différents lors de balade motos ce qui gâche l'expérience de certains.</li>
+          </ul>
+        </div>
       </div>
     </section>
 
     <section class="section section--hypotheses">
       <h2 class="titre titre--h2">Hypothèses</h2>
       <h3 class="titre titre--h3">Les hypothèses présentes</h3>
+      <div class="section__texte">
       <p class="texte">Une fois les problèmes identifiés, il était temps de dresser une liste d'hypothèses&nbsp;: </p>
-      <ul class="liste liste--ul">
-        <li class="liste__el">Création d'une application mobile simple et efficace</li>
-        <li class="liste__el">Ajouts de fonctionnalités telles que :
-          <ol class="liste liste--ol">
-            <li class="liste__el">Un bouton pour signaler un problème pendant une activité</li>
-            <li class="liste__el">Un chat par activités pour faciliter la communication</li>
-            <li class="liste__el">Un lien vers google map avec l'adresse de début et de fin de l'activité</li>
-            <li class="liste__el">Un système de notification lorsqu'une activité est modifiée</li>
-          </ol>
-        </li>
-        <li class="liste__el">L'application mobile doit pouvoir être utilisée en moto (permettre d'appuyer sur des boutons avec des gants)
-        </li>
-        <li class="liste__el">Précision du type de balade moto (Ex: si dépassements autorisés, si rouler uniquement, nombre de pauses
-          prévues)</li>
-        <li class="liste__el">Pouvoir s'inscrire à une activité et que celle-ci soit stocké dans une liste pour l'utilisateur</li>
-        <li class="liste__el">Pouvoir modifier une activité et en être tenu au courrant</li>
-      </ul>
-      <div class="secondePartie">
-        <h3 class="titre titre--h3">Justification des hypothèses</h3>
-        <p class="texte">Ces hypothèses se basent sur les problèmes des utilisateurs. La majorité des activités auxquelles les gens participent étant des balades motos, il faut insister sur la facilité à utiliser l'application en étant en moto.</p>
+        <ul class="liste liste--ul">
+          <li class="liste__el">Création d'une application mobile simple et efficace</li>
+          <li class="liste__el">Ajouts de fonctionnalités telles que :
+            <ol class="liste liste--ol">
+              <li class="liste__el">Un bouton pour signaler un problème pendant une activité</li>
+              <li class="liste__el">Un chat par activités pour faciliter la communication</li>
+              <li class="liste__el">Un lien vers google map avec l'adresse de début et de fin de l'activité</li>
+              <li class="liste__el">Un système de notification lorsqu'une activité est modifiée</li>
+            </ol>
+          </li>
+          <li class="liste__el">L'application mobile doit pouvoir être utilisée en moto (permettre d'appuyer sur des boutons avec des gants)
+          </li>
+          <li class="liste__el">Précision du type de balade moto (Ex: si dépassements autorisés, si rouler uniquement, nombre de pauses
+            prévues)</li>
+          <li class="liste__el">Pouvoir s'inscrire à une activité et que celle-ci soit stocké dans une liste pour l'utilisateur</li>
+          <li class="liste__el">Pouvoir modifier une activité et en être tenu au courrant</li>
+        </ul>
+      </div>
+      <div class="section__texte">
+        <div class="secondePartie">
+          <h3 class="titre titre--h3">Justification des hypothèses</h3>
+          <p class="texte">Ces hypothèses se basent sur les problèmes des utilisateurs. La majorité des activités auxquelles les gens participent étant des balades motos, il faut insister sur la facilité à utiliser l'application en étant en moto.</p>
+        </div>
       </div>
     </section>
 
     <section class="section section--modules">
       <h2 class="titre titre--h2">Mais qu'est-ce que ça donne?</h2>
-      <p class="texte">Une application mobile est donc le bon choix dans ce cas-ci. </p>
-      <p class="texte">L'application permettra donc à quelqu'un de s'inscrire ou de se connecter. Il sera alors redirigé vers le menu principal.</p>
-      <p class="texte">Partons du fait que l'on est un utilisateur. Si c'est ma première fois sur l'application, il y aura dans le menu principal toutes les dernières activités créées avec des informations telles que le type de l'activité, la date, etc. Pour chaque activité, il y aura un bouton “s'inscrire”, “trajet google map” ou “plus d'informations”.</p>
-      <p class="texte">En revanche, si j'ai déjà des activités auxquelles je suis inscrit ou intéressé, il y aura première une liste regroupant quelques-unes de ces activités, avec une lien ou bouton permettant de voir la liste complète, et ensuite viendrait la liste des activités récemment créées. Il y aura également un bouton pour filtrer les recherches.</p>
-      <p class="texte">Un nom sympa pourrait être “Mot'au top”, un petit jeu de mot. Il y aura également un bouton  pour consulter son profil, et un bouton notification.</p>
+      <div class="section__texte">
+        <p class="texte">Une application mobile est donc le bon choix dans ce cas-ci. </p>
+        <p class="texte">L'application permettra donc à quelqu'un de s'inscrire ou de se connecter. Il sera alors redirigé vers le menu principal.</p>
+        <p class="texte">Partons du fait que l'on est un utilisateur. Si c'est ma première fois sur l'application, il y aura dans le menu principal toutes les dernières activités créées avec des informations telles que le type de l'activité, la date, etc. Pour chaque activité, il y aura un bouton “s'inscrire”, “trajet google map” ou “plus d'informations”.</p>
+        <p class="texte">En revanche, si j'ai déjà des activités auxquelles je suis inscrit ou intéressé, il y aura première une liste regroupant quelques-unes de ces activités, avec une lien ou bouton permettant de voir la liste complète, et ensuite viendrait la liste des activités récemment créées. Il y aura également un bouton pour filtrer les recherches.</p>
+        <p class="texte">Un nom sympa pourrait être “Mot'au top”, un petit jeu de mot. Il y aura également un bouton  pour consulter son profil, et un bouton notification.</p>
+      </div>
     </section>
 
     <section class="section section--presentation">
       <h2 class="titre titre--h2">Préparation à la présentation</h2>
-      <p class="texte">...</p>
+      <div class="section__texte">
+        <p class="texte">...</p>
+      </div>
     </section>
 
     <section class="section section--faits">
