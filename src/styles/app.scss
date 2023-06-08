@@ -418,12 +418,23 @@ body {
     }
     .section__texte {
         grid-column: 1 / -1;
-        grid-row: 3 / 5;
+        grid-row: 3;
+    }
+    .section__texte:nth-of-type(2) {
+        grid-row: 4;
+    }
+
+    .section__texte--seconde {
+        grid-column: 1 / -1;
+        grid-row: 6;
     }
 
     .image {
         width: 500px;
         height: auto;
+    }
+    .image--seconde {
+        grid-row: 5;
     }
 }
 
@@ -456,7 +467,7 @@ body {
     }
     .section__texte {
         grid-column: 1 / 4;
-        grid-row: 3 / 5;
+        grid-row: 3;
     }
 
     .image {
