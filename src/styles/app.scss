@@ -374,7 +374,7 @@ hr {
     font-size: 14px;
 }
 
-.main--credits {
+.main--credits, .main--uikit, .main--video  {
     margin-top: 10%;
     margin-bottom: 10%;
     margin-left: 5%;
@@ -495,6 +495,13 @@ hr {
     margin: 15px;
 }
 
+.video {
+    position: relative;
+    width: 100%;
+    object-fit: cover;
+    height: auto;
+    z-index: 15;
+}
 /*****************/
 /* MEDIA QUERIES */
 /*****************/
@@ -541,7 +548,7 @@ hr {
         width: 25px;
     }
 
-    .main--credits {
+    .main--credits, .main--uikit, .main--video {
         margin-top: 10%;
         margin-bottom: 10%;
         margin-left: 20%;
@@ -569,7 +576,6 @@ hr {
     }
 
     .el__lien {
-        margin: 30px;
         font-size: 38px;
     }
 }
@@ -585,7 +591,7 @@ hr {
         justify-self: center;
     }
 
-    .main--credits {
+    .main--credits, .main--uikits, .main--video  {
         width: 600px;
         margin-left: auto;
         margin-right: auto;
@@ -648,7 +654,7 @@ hr {
         font-size: 24px;
         max-width: 700px;
     }
-    .main--credits {
+    .main--credits, .main--uikit, .main--video  {
         width: 600px;
     }
     .container--image {
