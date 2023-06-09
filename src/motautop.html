@@ -18,7 +18,8 @@
   <meta name="twitter:image" content="assets/images/header_1.jpg">
 
   <!-- Open Graph data -->
-  <meta property="og:site_name" content="Page Mot'au top du site de présentation du TFA - Sébastien Leonardi - DWT - HEAJ">
+  <meta property="og:site_name"
+    content="Page Mot'au top du site de présentation du TFA - Sébastien Leonardi - DWT - HEAJ">
   <meta property="og:title" content="Page Mot'au top du site de présentation du TFA - Sébastien Leonardi - DWT - HEAJ">
   <meta property="og:description"
     content="Page Mot'au top du site web de présentation du TFA par Sébastien Leonardi - DWT - HEAJ">
@@ -60,6 +61,34 @@
     </a>
   </header>
 
+  <nav class="menu">
+    <button class="menu__bouton">
+      <svg class="svg__burgermenu svg--active" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+        viewBox="0 0 24 24">
+        <path d="M24 6h-24v-4h24v4zm0 4h-24v4h24v-4zm0 8h-24v4h24v-4z" />
+      </svg>
+      <svg class="svg__burgermenu svg--inactive" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+        viewBox="0 0 24 24">
+        <path
+          d="M23 20.168l-8.185-8.187 8.185-8.174-2.832-2.807-8.182 8.179-8.176-8.179-2.81 2.81 8.186 8.196-8.186 8.184 2.81 2.81 8.203-8.192 8.18 8.192z" />
+      </svg>
+    </button>
+    <div class="menu__liens">
+      <ul class="liens__liste">
+        <li class="liens__liste--el"><a class="el__lien" href="index.html">Accueil</a></li>
+        <hr>
+        <li class="liens__liste--el"><a class="el__lien" href="motautop.html#intro">Introduction</a></li>
+        <li class="liens__liste--el"><a class="el__lien" href="motautop.html#premices">Premices</a></li>
+        <li class="liens__liste--el"><a class="el__lien" href="motautop.html#problemes">Problèmes</a></li>
+        <li class="liens__liste--el"><a class="el__lien" href="motautop.html#hypotheses">Hypothèses</a></li>
+        <li class="liens__liste--el"><a class="el__lien" href="motautop.html#modules">Modules</a></li>
+        <li class="liens__liste--el"><a class="el__lien" href="motautop.html#presentation">Présentation</a></li>
+        <li class="liens__liste--el"><a class="el__lien" href="motautop.html#faits">Faits</a></li>
+        <li class="liens__liste--el"><a class="el__lien" href="motautop.html#conclusion">Conclusion</a></li>
+      </ul>
+    </div>
+  </nav>
+
   <main class="main main--motautop">
     <section class="section section--intro" id="intro">
       <h2 class="titre titre--h2">Avant de démarrer</h2>
@@ -82,37 +111,37 @@
     <section class="section section--premices" id="premices">
       <h2 class="titre titre--h2">Rencontres</h2>
       <h3 class="titre titre--h3">L'heure de connaître les motards.</h3>
-        <div class="section__texte">
-          <p class="texte">Après avoir choisi l'association, j'ai pu facilement contacter un administrateur de
-            l'association, qui m'a
-            premièrement expliqué tout un tas de choses à propos de celle-ci. Notamment ce que faisait l'association, de
-            qui étaient composés les membres, leurs passions, et plein d'autres choses.</p>
-        </div>
-        <div class="section__texte section__texte--sansImage">
-          <p class="texte">Grâce à lui, j'ai pu contacter un très grand
-            nombre d'utilisateurs ainsi que d'autres membres de l'administration, au moyen d'un google form. Cela m'a
-            permis
-            de récolter un nombre important de réponses en peu de temps. </p>
-          <p class="texte">L'utilisation d'un google form m'a beaucoup aidé, car, grâce au moyen d'un feedback présent
-            sur
-            le formulaire lui-même, je pouvais en permanence améliorer mes
-            questions, ou en ajouter davantage.</p>
-          <p class="texte">L'utilisation d'un google form est rapide et efficace. Comme dit précédemment, on peut
-            toucher
-            un bon nombre de personnes, sans spécialement prendre de rendez-vous, prendre de leurs précieux temps,
-            devoir
-            se déplacer dans toute la Belgique.</p>
-          <p class="texte">De plus, les utilisateurs pouvaient répondre comme bon leur semblait et semblait safisfaits
-            de
-            l'utilisation de cet outil.</p>
-          <p class="texte">En dehors du google form, j'ai pu brièvement interroger un ou deux membres qui ont pu me
-            donner
-            un rapide ressenti.</p>
-        </div>
-        <div class="container--image image--seconde">
-          <img class="image" src="assets/images/image_rencontre.jpg" srcset="assets/images/image_rencontre@2x.jpg 2x"
-            alt="Photographie représentant une personne sur son téléphone" title="Image de Freepik.com">
-        </div>
+      <div class="section__texte">
+        <p class="texte">Après avoir choisi l'association, j'ai pu facilement contacter un administrateur de
+          l'association, qui m'a
+          premièrement expliqué tout un tas de choses à propos de celle-ci. Notamment ce que faisait l'association, de
+          qui étaient composés les membres, leurs passions, et plein d'autres choses.</p>
+      </div>
+      <div class="section__texte section__texte--sansImage">
+        <p class="texte">Grâce à lui, j'ai pu contacter un très grand
+          nombre d'utilisateurs ainsi que d'autres membres de l'administration, au moyen d'un google form. Cela m'a
+          permis
+          de récolter un nombre important de réponses en peu de temps. </p>
+        <p class="texte">L'utilisation d'un google form m'a beaucoup aidé, car, grâce au moyen d'un feedback présent
+          sur
+          le formulaire lui-même, je pouvais en permanence améliorer mes
+          questions, ou en ajouter davantage.</p>
+        <p class="texte">L'utilisation d'un google form est rapide et efficace. Comme dit précédemment, on peut
+          toucher
+          un bon nombre de personnes, sans spécialement prendre de rendez-vous, prendre de leurs précieux temps,
+          devoir
+          se déplacer dans toute la Belgique.</p>
+        <p class="texte">De plus, les utilisateurs pouvaient répondre comme bon leur semblait et semblait safisfaits
+          de
+          l'utilisation de cet outil.</p>
+        <p class="texte">En dehors du google form, j'ai pu brièvement interroger un ou deux membres qui ont pu me
+          donner
+          un rapide ressenti.</p>
+      </div>
+      <div class="container--image image--seconde">
+        <img class="image" src="assets/images/image_rencontre.jpg" srcset="assets/images/image_rencontre@2x.jpg 2x"
+          alt="Photographie représentant une personne sur son téléphone" title="Image de Freepik.com">
+      </div>
     </section>
 
     <section class="section section--problemes" id="problemes">
@@ -204,7 +233,8 @@
       </div>
       <div class="container--image">
         <img class="image" src="assets/images/image_application.jpg" srcset="assets/images/image_application@2x.jpg 2x"
-          alt="Photographie d'un mobard sur sa moto avec un effet de flou" title="Illustration d'une application en développement">
+          alt="Photographie d'un mobard sur sa moto avec un effet de flou"
+          title="Illustration d'une application en développement">
       </div>
     </section>
 

@@ -45,20 +45,48 @@
 
 <body class="body">
   <header class="header">
+    <picture class="picture">
+      <source media="(max-width: 600px)" srcset="assets/images/header_1.jpg, assets/images/header_1@2x.jpg 2x">
+      <source media="(min-width: 601px)"
+        srcset="assets/images/header_2_default.jpg, assets/images/header_2_default.jpg 2x">
+      <img class="image image--header" src="assets/images/header_2_default.jpg"
+        srcset="assets/images/header_2_default.jpg 2x" alt="Photos de motard roulant sur une route">
+    </picture>
     <a href="index.html">
       <div class="container container--header">
         <h1 class="titre titre--header">Mot'au top</h1>
         <p class="texte texte--header">Organisez, Participez, Explorez!</p>
       </div>
-      <picture class="picture">
-        <source media="(max-width: 600px)" srcset="assets/images/header_1.jpg, assets/images/header_1@2x.jpg 2x">
-        <source media="(min-width: 601px)"
-          srcset="assets/images/header_2_default.jpg, assets/images/header_2_default.jpg 2x">
-        <img class="image image--header" src="assets/images/header_2_default.jpg"
-          srcset="assets/images/header_2_default.jpg 2x" alt="Photos de motard roulant sur une route">
-      </picture>
     </a>
   </header>
+
+  <nav class="menu">
+    <button class="menu__bouton">
+      <svg class="svg__burgermenu svg--active" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+        viewBox="0 0 24 24">
+        <path d="M24 6h-24v-4h24v4zm0 4h-24v4h24v-4zm0 8h-24v4h24v-4z" />
+      </svg>
+      <svg class="svg__burgermenu svg--inactive" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+        viewBox="0 0 24 24">
+        <path
+          d="M23 20.168l-8.185-8.187 8.185-8.174-2.832-2.807-8.182 8.179-8.176-8.179-2.81 2.81 8.186 8.196-8.186 8.184 2.81 2.81 8.203-8.192 8.18 8.192z" />
+      </svg>
+    </button>
+    <div class="menu__liens">
+      <ul class="liens__liste">
+        <li class="liens__liste--el"><a class="el__lien" href="index.html">Accueil</a></li>
+        <hr>
+        <li class="liens__liste--el"><a class="el__lien" href="motautop.html#intro">Introduction</a></li>
+        <li class="liens__liste--el"><a class="el__lien" href="motautop.html#premices">Premices</a></li>
+        <li class="liens__liste--el"><a class="el__lien" href="motautop.html#problemes">Problèmes</a></li>
+        <li class="liens__liste--el"><a class="el__lien" href="motautop.html#hypotheses">Hypothèses</a></li>
+        <li class="liens__liste--el"><a class="el__lien" href="motautop.html#modules">Modules</a></li>
+        <li class="liens__liste--el"><a class="el__lien" href="motautop.html#presentation">Présentation</a></li>
+        <li class="liens__liste--el"><a class="el__lien" href="motautop.html#faits">Faits</a></li>
+        <li class="liens__liste--el"><a class="el__lien" href="motautop.html#conclusion">Conclusion</a></li>
+      </ul>
+    </div>
+  </nav>
 
   <main class="main main--accueil">
     <section class="section section--premices">
@@ -173,7 +201,8 @@
           utilisateurs.</p>
       </div>
       <div class="container--image">
-        <img class="image" src="assets/images/image_recherche.jpg" srcset="assets/images/image_recherche@2x.jpg 2x" alt="Photo d'un ordinateur avec une autre faisant une recherche Google" title="Image de Unsplash.com">
+        <img class="image" src="assets/images/image_recherche.jpg" srcset="assets/images/image_recherche@2x.jpg 2x"
+          alt="Photo d'un ordinateur avec une autre faisant une recherche Google" title="Image de Unsplash.com">
       </div>
     </section>
 
@@ -190,7 +219,8 @@
           j'ai pu voir les raisons de pourquoi ce travail est important.</p>
       </div>
       <div class="container--image">
-        <img class="image" src="assets/images/image_labyrinthe.jpg" srcset="assets/images/image_labyrinthe@2x.jpg 2x" alt="Image d'un fil qui fait des noeuds" title="Image de Freepik.com">
+        <img class="image" src="assets/images/image_labyrinthe.jpg" srcset="assets/images/image_labyrinthe@2x.jpg 2x"
+          alt="Image d'un fil qui fait des noeuds" title="Image de Freepik.com">
       </div>
     </section>
 
