@@ -2,6 +2,7 @@
 /src/assets/videos/
 /dist/assets/videos/
 /distOld/
+distOld/assets/videos/video.mov
 ### macOS ###
 # General
 .DS_Store
