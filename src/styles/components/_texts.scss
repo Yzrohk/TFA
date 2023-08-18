@@ -1,0 +1,51 @@
+body {
+    font-family: 'Instrument Sans', sans-serif;
+    background-color: #FBFBFA;
+}
+
+.titre--h2 {
+    font-family: 'Commissioner', sans-serif;
+    color: #005b9d;
+    font-size: 28px;
+    line-height: 1.5;
+    margin-bottom: 15px;
+}
+
+.texte {
+    font-size: 18px;
+    line-height: 1.5;
+    margin-bottom: 18px;
+}
+
+.liste {
+    margin-bottom: 18px;
+    font-size: 16px;
+}
+
+.liste__el {
+    line-height: 1.3;
+    margin-top: 7px;
+    margin-bottom: 7px;
+
+    &::before {
+        content: "->";
+        padding-right: 8px;
+    }
+}
+
+.liste--ol {
+    .liste__el {
+        &::before {
+            content: "->";
+            padding-right: 8px;
+        }
+    }
+    margin-left: 5%;
+}
+
+.redirection {
+    color: #8477ba;
+    &:hover, &:focus {
+        color: #a397d1;
+    }
+}

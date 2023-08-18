@@ -1,0 +1,220 @@
+/*****************/
+/* MEDIA QUERIES */
+/*****************/
+@media (min-width: 601px) {
+
+    .header--container {
+        top: 20%;
+    }
+
+    .titre--header {
+        font-size: 70px;
+    }
+
+    .texte--header {
+        font-size: 30px;
+    }
+
+
+    .titre--h2, .titre--credits {
+        font-size: 60px;
+    }
+
+    .titre--h3, .soustitre {
+        font-size: 25px;
+    }
+
+    .texte, .categorie p {
+        font-size: 22px;
+    }
+
+    .liste__el {
+        font-size: 20px;
+    }
+
+    .footer a {
+        font-size: 16px;
+        width: 25px;
+    }
+
+    .main--credits, .main--uikit, .main--video {
+        margin-top: 10%;
+        margin-bottom: 10%;
+        margin-left: 20%;
+        margin-right: 20%;
+    }
+    
+    .titre--credits {
+        font-size: 40px;
+    }
+}
+
+@media (min-width: 800px) {
+    .section {
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-content: center;
+        &:nth-child(2n) {
+            border-radius: 0px;
+        }
+    }
+    .container--image {
+        margin-top: 5%;
+        width: 70%;
+        justify-self: center;
+    }
+
+    .el__lien {
+        font-size: 38px;
+    }
+}
+
+@media (min-width: 1000px) {
+    .section {
+        display: grid;
+        grid-template-columns: 80%;
+        justify-content: center;
+    }
+    .container--image {
+        width: 70%;
+        justify-self: center;
+    }
+
+    .main--credits, .main--uikits, .main--video  {
+        width: 600px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media (min-width: 1200px) {
+    .menu__bouton {
+        display: none;
+    }
+
+    .menu__liens {
+        width: 100%;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: auto;
+        bottom: auto;
+        z-index: 24;
+        transform: translateX(0%);
+        opacity: 1;
+    }
+    .liens__liste {
+        height: auto;
+        flex-direction: row;
+    }
+
+    .section {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        justify-content: center;
+    }
+    .container--image {
+        width: 70%;
+        justify-self: center;
+    }
+    .titre--h2 {
+        grid-column: 1 / -1;
+        grid-row: 1;
+    }
+    .section__texte, .container--image {
+        grid-row: 3;
+        align-self:flex-start;
+    }
+    .section__texte--seconde {
+        margin-top: 3%;
+        grid-row: 4;
+        grid-column: 1 / -1;
+    }
+    .section--sansImage .section__texte {
+        grid-column: 1 / -1;
+    }
+
+    .section__texte--sansImage {
+        margin-top: 3%;
+        grid-row: 4;
+        grid-column: 1 / -1;
+    }
+    .section__texte--sansImage:last-of-type {
+        grid-row: 5;
+    }
+
+    .el__lien {
+        font-size: 26px;
+        padding: 10px 16px 10px 16px;
+    }
+}
+@media (min-width: 1600px) {
+    .titre--h2, .titre--credits {
+        margin-bottom: 5%;
+        font-size: 70px;
+    }
+    .titre--h3, .soustitre {
+        font-size: 28px;
+    }
+    .section__texte, .categorie p {
+        font-size: 24px;
+        max-width: 700px;
+    }
+    .main--credits, .main--uikit, .main--video  {
+        width: 600px;
+    }
+    .container--image {
+        margin-top: 0;
+    }
+
+    .section {
+        display: grid;
+        grid-template-columns: repeat(2, 40%);
+        justify-content: center;
+        padding-top: 5%;
+        padding-bottom: 5%;
+        padding-left: 8%;
+        padding-right: 8%;
+    }
+
+    .section__texte--sansImage {
+        justify-self: center;
+    }
+    .titre--sansImage {
+        margin-left: 295px;
+    }
+
+    .footer {
+        padding-top: 5%;
+        padding-bottom: 5%;
+        padding-left: 16%;
+        padding-right: 16%;
+        box-sizing: border-box;    
+        border-top: 1px solid #2f2949;
+
+        .liste--ul {
+            .listeLiens__el,
+            .subNav__el {
+                padding-right: 30px;
+            }
+        }
+    }
+
+    .titre--header {
+        font-size: 150px;
+        margin-bottom: 40px;
+        line-height: 1.5;
+    }
+    
+    .texte--header {
+        font-size: 40px;
+        line-height: 1.2;
+        text-shadow: black 1px 1px 2px;
+    }
+
+    .el__lien {
+        font-size: 28px;
+        padding: 10px 22px 10px 22px;
+    }
+
+}

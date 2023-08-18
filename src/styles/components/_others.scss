@@ -1,0 +1,127 @@
+.image {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    box-shadow: rgb(124 124 124) 0px 0px 15px;
+    border-radius: 5px;
+}
+
+.main--credits, .main--uikit, .main--video  {
+    margin-top: 10%;
+    margin-bottom: 10%;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.titre--credits {
+    font-family: 'Nerko One', cursive;
+    color: #8477ba;
+    font-size: 40px;
+    line-height: 1.5;
+}
+
+.categorie {
+    margin-bottom: 10%;
+    p {
+        margin-bottom: 10px;
+    }
+}
+
+.couleurs {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    .col {
+        width: 50px;
+        height: 50px;
+        border: 1px solid grey;
+        margin: 5px;
+    }
+
+    .col--FBFBFA {
+        background-color: #FBFBFA;
+    }
+    .col--19152b {
+        background-color: #19152b;
+    }
+    .col--8477ba {
+        background-color: #8477ba;
+    }
+    .col--a397d1 {
+        background-color: #a397d1;
+    }
+    .col--black {
+        background-color: black;
+    }
+}
+
+.titreUI {
+    font-family: 'Nerko One', cursive;
+    color: #8477ba;
+
+    &--vPhone {
+        font-size: 40px;
+    }
+    &--vTablet {
+        font-size: 60px;
+    }
+    &--vDesktop {
+        font-size: 70px;
+    }
+}
+.soustitreUI {
+    text-decoration: underline;
+    font-family: 'Instrument Sans', sans-serif;
+
+    &--vPhone {
+        font-size: 20px;
+    }
+    &--vTablet {
+        font-size: 25px;
+    }
+    &--vDesktop {
+        font-size: 28px;
+    }
+}
+.paragrapheUI {
+    font-family: 'Instrument Sans', sans-serif;
+
+    &--vPhone {
+        font-size: 18px;
+    }
+    &--vTablet {
+        font-size: 22px;
+    }
+    &--vDesktop {
+        font-size: 22px;
+    }
+}
+.lien {
+    color:#8477ba;
+    &--hover {
+        color: #a397d1;
+    }
+}
+.icons {
+    background-color: #19152b;
+    .footer__lien {
+        color: white;
+        fill: white;
+        &--hover {
+            color:#81727B ;
+            fill: #81727B;
+        }
+    }
+}
+
+.style {
+    margin: 15px;
+}
+
+.video {
+    position: relative;
+    width: 100%;
+    object-fit: cover;
+    height: auto;
+    z-index: 15;
+}
