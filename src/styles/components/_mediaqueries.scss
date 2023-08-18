@@ -8,7 +8,7 @@
     }
 
     .titre--header {
-        font-size: 70px;
+        font-size: 100px;
     }
 
     .texte--header {
@@ -26,6 +26,7 @@
 
     .texte, .categorie p {
         font-size: 22px;
+        max-width: 60ch;
     }
 
     .liste__el {
@@ -92,6 +93,16 @@
         display: none;
     }
 
+    .titre--header {
+        font-size: 124px;
+        margin-bottom: 40px;
+    }
+
+    .texte--header {
+        font-size: 35px;
+        line-height: 1.2;
+    }
+
     .menu__liens {
         width: 100%;
         position: fixed;
@@ -146,6 +157,26 @@
     .el__lien {
         font-size: 26px;
         padding: 10px 16px 10px 16px;
+    }
+
+    .image--even {
+        transform: rotate(8deg);
+        &:hover {
+            transform: rotate(-12deg) scale(1.02);
+    
+        }
+    }
+    .image--odd {
+        transform: rotate(-8deg);
+        &:hover {
+            transform: rotate(12deg) scale(1.02);
+        }
+    }
+    .image--even, .image--odd {
+        transition: all .5s ease-in-out;
+        &:hover {
+            cursor: pointer;
+        }
     }
 }
 @media (min-width: 1600px) {
@@ -202,14 +233,10 @@
 
     .titre--header {
         font-size: 150px;
-        margin-bottom: 40px;
-        line-height: 1.5;
     }
     
     .texte--header {
         font-size: 40px;
-        line-height: 1.2;
-        text-shadow: black 1px 1px 2px;
     }
 
     .el__lien {

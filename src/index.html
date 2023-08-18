@@ -2,7 +2,7 @@
 <html lang="fr">
 
 <head>
-  <title>Accueil</title>
+  <title>Mot'au Top</title>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
@@ -40,8 +40,11 @@
   <link href="https://fonts.googleapis.com/css2?family=Nerko+One&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=News+Cycle&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Commissioner:wght@200;300;400;500;600&display=swap" rel="stylesheet">
+  <link href="https://db.onlinewebfonts.com/c/ac95f91c55cc591ecf37a4d136ff8031?family=BMWTypeNext+Pro+Regular" rel="stylesheet">
 
   <link rel="stylesheet" href="styles/app.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.0/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
   <script src="scripts/app.js" defer></script>
 </head>
 
@@ -59,6 +62,7 @@
 
   <nav class="menu">
     <button class="menu__bouton">
+      <span class="texteBtn">Menu</span>
       <svg class="svg__burgermenu svg--active" clip-rule="evenodd" fill-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="m11 16.745c0-.414.336-.75.75-.75h9.5c.414 0 .75.336.75.75s-.336.75-.75.75h-9.5c-.414 0-.75-.336-.75-.75zm-9-5c0-.414.336-.75.75-.75h18.5c.414 0 .75.336.75.75s-.336.75-.75.75h-18.5c-.414 0-.75-.336-.75-.75zm4-5c0-.414.336-.75.75-.75h14.5c.414 0 .75.336.75.75s-.336.75-.75.75h-14.5c-.414 0-.75-.336-.75-.75z" fill-rule="nonzero"/></svg>
       <svg class="svg__burgermenu svg--inactive" clip-rule="evenodd" fill-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="m12 10.93 5.719-5.72c.146-.146.339-.219.531-.219.404 0 .75.324.75.749 0 .193-.073.385-.219.532l-5.72 5.719 5.719 5.719c.147.147.22.339.22.531 0 .427-.349.75-.75.75-.192 0-.385-.073-.531-.219l-5.719-5.719-5.719 5.719c-.146.146-.339.219-.531.219-.401 0-.75-.323-.75-.75 0-.192.073-.384.22-.531l5.719-5.719-5.72-5.719c-.146-.147-.219-.339-.219-.532 0-.425.346-.749.75-.749.192 0 .385.073.531.219z"/></svg>
     </button>
@@ -89,8 +93,8 @@
           des activités pour les fans de motos BMW.</p>
       </div>
       <div class="container--image">
-        <img class="image" src="assets/images/image_biker.jpg" srcset="assets/images/image_biker@2x.jpg 2x"
-          alt="Photographie d'un mobard sur sa moto avec un effet de flou" title="Image de Pixabay.com">
+        <img class="image image--even image--text" src="assets/images/logoclub.jpg" srcset="assets/images/logoclub@2x.jpg 2x"
+          alt="Logo de BWM Clubs Belgium" title="Logo de BWM Clubs Belgium">
       </div>
     </section>
 
@@ -105,8 +109,8 @@
         <p class="texte texte--bold">Ayant la possibilité de contacter tous les membres, cette personne m'a aidé à rencontrer en contact avec ces derniers.</p>
       </div>
       <div class="container--image">
-        <img class="image" src="assets/images/image_contact.jpg" srcset="assets/images/image_contact@2x.jpg 2x"
-          alt="Photographie représentant une personne sur son téléphone" title="Image de Unsplash.com">
+        <img class="image image--odd image--text" src="assets/images/rencontre.jpg" srcset="assets/images/rencontre@2x.jpg 2x"
+          alt="Photo de groupe des membres du club tenant le drapeau du club, avec Sébastien" title="Photo de groupe des membres du club tenant le drapeau du club, avec Sébastien">
       </div>
     </section>
 
@@ -118,10 +122,12 @@
         <p class="texte texte--bold">Mais ce n'est pas le cas pour tout le monde. Certains d'entre eux ont effectivement des
           problèmes, ou du mal avec certaines choses.</p>
         <p class="texte">Par exemple&nbsp;:</p>
-        <ul class="liste liste--ul">
+        <ul class="liste liste--ul texte">
           <li class="liste__el">Du mal à parvenir aux activités de l'association.</li>
           <li class="liste__el">Des problèmes internes lors de trips motos.</li>
-          <li class="liste__el"><a href="motautop.html#problemes" class="redirection">Et bien d'autres.</a></li>
+          <li class="liste__el">Des difficultés à utiliser le site internet sur téléphone.</li>
+          <li class="liste__el">Des difficultés à être tenu au courrant lorsqu'une activité est modifiée.</li>
+          <li class="liste__el">Impossible de prévenir l'organisateur d'une activité, via le site web, lorsqu'un problème survient.</li>
         </ul>
       </div>
     </section>
@@ -129,10 +135,24 @@
     <section class="section section--hypothese" id="hypotheses">
       <h2 class="titre titre--h2">Je réfléchis à quelque chose qui pourrait les aider.</h2>
       <div class="section__texte section__texte--sansImage">
-        <p class="texte">J'ai pu élaborer tout un tas d'hypothèses grâce aux nombreuses réponses que j'ai reçues.</p>
-        <p class="texte">Vous pourrez, <a href="motautop.html#hypotheses" class="redirection">en suivant ce lien</a>,
-          découvrir mes hypothèses
-          auxquelles j'ai réfléchi, en passant par les premières jusqu'aux dernières.</p>
+        <p class="texte">J'ai pu élaborer tout un tas d'hypothèses grâce aux nombreuses réponses que j'ai reçues, comme les suivantes :</p>
+        <ul class="liste liste--ul texte">
+          <li class="liste__el">Création d'une application mobile simple et efficace</li>
+          <li class="liste__el">Ajouts de fonctionnalités telles que :
+            <ol class="liste liste--ol">
+              <li class="liste__el">Un bouton pour signaler un problème pendant une activité</li>
+              <li class="liste__el">Un chat par activités pour faciliter la communication</li>
+              <li class="liste__el">Un lien vers google map avec l'adresse de début et de fin de l'activité / la possibilité de télécharger le tracé GPX de l'activité.</li>
+              <li class="liste__el">Un système de notification lorsqu'une activité est modifiée</li>
+            </ol>
+          </li>
+          <li class="liste__el">L'application mobile doit pouvoir être utilisée en moto (permettre d'appuyer sur des
+            boutons avec des gants).
+          </li>
+          <li class="liste__el">Précision du type de l'activité.</li>
+          <li class="liste__el">Pouvoir s'inscrire à une activité et que celle-ci soit stocké dans une liste pour l'utilisateur</li>
+          <li class="liste__el">Pouvoir modifier une activité et en être tenu au courrant.</li>
+        </ul>
       </div>
 
     </section>
@@ -147,14 +167,8 @@
           comme
           celle-ci.</p>
       </div>
-      <div class="section__texte  section__texte--sansImage">
-        <p class="texte">J'ai donc rédiger <a href="motautop.html#modules" class="redirection">une liste d'outils</a>
-          nécessaires au bon
-          fonctionnement de cette application. Évidemment, toute l'application ne sera pas décrite, mais ce qu'il y a
-          de plus important y est.</p>
-      </div>
       <div class="container--image">
-        <img class="image" src="assets/images/image_solutions.jpg" srcset="assets/images/image_solutions@2x.jpg 2x"
+        <img class="image  image--even image--text" src="assets/images/image_application.jpg" srcset="assets/images/image_application@2x.jpg 2x"
           alt="Illustration du mot problem surligné et du mot solution en dessous" title="Image de Pixabay.com">
       </div>
     </section>
@@ -163,23 +177,28 @@
       <h2 class="titre titre--h2">Qu'en penseriez-vous?</h2>
       <div class="section__texte section__texte--sansImage">
         <p class="texte">Ce sera le moment où je présenterai de vive voix ce que j'ai fait durant ce projet.</p>
-        <p class="texte">Aidé d'un support visuel, je pourrais enfin en parler par la voix, plutôt que par écrit.</p>
-        <p class="texte"><a href="motautop.html#presentation" class="redirection">Voici ce que j'ai fait pour préparer
-            ma présentation.</a></p>
+        <p class="texte">Aidé d'un support visuel, je pourrais enfin en parler par la voix, plutôt que par écrit, même si je n'ai pas l'habitude de parler devant un jury aussi grand.</p>
+        <p class="texte">J'espère pouvoir mettre mon stress de coté et pouvoir parler de mon projet sans encombres.</p>
       </div>
     </section>
 
     <section class="section section--recherches" id="recherches">
       <h2 class="titre titre--h2">Des faits et des recherches.</h2>
       <div class="section__texte">
-        <p class="texte">Pour la fin, <a href="motautop.html#faits" class="redirection">je présente des faits</a> qui
-          m'ont aidé dans l'aboutissement de ce projet.</p>
+        <p class="texte">Il existe maintenant de plus en plus d'applications de navigation pour les motards mais encore
+          très peu d'applications se basent sur des listes d'activités. J'ai difficilement trouvé des applications semblables aux hypothèses que j'ai
+          élaborées, ou du moins, elles étaient payantes.</p>
         <p class="texte">Ces recherches m'ont permis de me focaliser plus facilement sur certaines hypothèses plutôt que
           d'autres. Elles m'ont également permis de comprendre davantage sur certaines problèmatiques qu'énoncaient les
           utilisateurs.</p>
+          <p class="texte">À côté de ça, un bon nombre de motards préfèrent désormais utiliser leur téléphone comme
+            système de navigation, plutôt qu'un GPS. C'est plus confortable, c'est plus pratique et c'est surtout de plus
+            en plus possible. De nos jours, il existe même des gants permettant d'interagir avec l'écran du téléphone.
+            Même si je décourage l'utilisation du téléphone en roulant, les applications restent préférées par les motards
+            lorsqu'ils sont sur la route ou à l'arrêt.</p>
       </div>
       <div class="container--image">
-        <img class="image" src="assets/images/image_recherche.jpg" srcset="assets/images/image_recherche@2x.jpg 2x"
+        <img class="image image--odd  image--text" src="assets/images/image_recherche.jpg" srcset="assets/images/image_recherche@2x.jpg 2x"
           alt="Photo d'un ordinateur avec une autre faisant une recherche Google" title="Image de Unsplash.com">
       </div>
     </section>
@@ -196,8 +215,8 @@
           j'ai pu voir les raisons de pourquoi ce travail est important.</p>
       </div>
       <div class="container--image">
-        <img class="image" src="assets/images/image_labyrinthe.jpg" srcset="assets/images/image_labyrinthe@2x.jpg 2x"
-          alt="Image d'un fil qui fait des noeuds" title="Image de Freepik.com">
+        <img class="image image--even  image--text" src="assets/images/aboutissement.jpg" srcset="assets/images/aboutissement@2x.jpg 2x"
+          alt="Photo de plusieurs moto roulant en file" title="Photo de plusieurs moto roulant en file">
       </div>
     </section>
 
