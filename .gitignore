@@ -1,8 +1,4 @@
 # Created by https://www.gitignore.io/api/sass,node,macos,windows,phpstorm,sublimetext,visualstudiocode
-/src/assets/videos/
-/dist/assets/videos/
-/distOld/
-distOld/assets/videos/video.mov
 ### macOS ###
 # General
 .DS_Store
@@ -260,4 +256,9 @@ $RECYCLE.BIN/
 
 ### Custom ###
 dist/
-
+/src/assets/videos/
+/dist/assets/videos/
+/distOld/
+distOld/assets/videos/video.mov
+distOld/
+distOld
