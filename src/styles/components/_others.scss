@@ -24,9 +24,9 @@
 }
 
 .titre--credits {
-    font-family: 'Nerko One', cursive;
-    color: #8477ba;
-    font-size: 40px;
+    font-family: 'Commissioner', sans-serif;
+    color: #005b9d;
+    font-size: 28px;
     line-height: 1.5;
 }
 
@@ -51,14 +51,14 @@
     .col--FBFBFA {
         background-color: #FBFBFA;
     }
-    .col--19152b {
-        background-color: #19152b;
+    .col--002946 {
+        background-color: #002946;
     }
-    .col--8477ba {
-        background-color: #8477ba;
+    .col--005b9d {
+        background-color: #005b9d;
     }
     .col--a397d1 {
-        background-color: #a397d1;
+        background-color: rgb(129, 114, 123);
     }
     .col--black {
         background-color: black;
@@ -66,8 +66,10 @@
 }
 
 .titreUI {
-    font-family: 'Nerko One', cursive;
-    color: #8477ba;
+    font-family: 'Commissioner', sans-serif;
+    color: #005b9d;
+    font-size: 28px;
+    line-height: 1.5;
 
     &--vPhone {
         font-size: 40px;
@@ -113,13 +115,13 @@
     }
 }
 .icons {
-    background-color: #19152b;
+    background-color: #002946;
     .footer__lien {
         color: white;
         fill: white;
         &--hover {
-            color:#81727B ;
-            fill: #81727B;
+            color:black ;
+            fill: black;
         }
     }
 }

@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <title>Mot'au Top</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  <meta name="description" content="Accueil du projet TFA">
+  <!-- Meta Partage -->
+  <!-- Twitter Card data -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@leonardisebastien">
+  <meta name="twitter:creator" content="@leonardisebastien">
+  <meta name="twitter:title" content="Site de présentation du TFA - Sébastien Leonardi - DWT - HEAJ">
+  <meta name="twitter:description"
+    content="Page principale du site web de présentation du TFA par Sébastien Leonardi - DWT - HEAJ">
+  <meta name="twitter:image" content="assets/images/header_1.jpg">
+
+  <!-- Open Graph data -->
+  <meta property="og:site_name" content="Site de présentation du TFA - Sébastien Leonardi - DWT - HEAJ">
+  <meta property="og:title" content="Site de présentation du TFA - Sébastien Leonardi - DWT - HEAJ">
+  <meta property="og:description"
+    content="Page principale du site web de présentation du TFA par Sébastien Leonardi - DWT - HEAJ">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="http://sebastien-leonardi.be">
+  <meta property="og:image" content="assets/images/header_1.jpg">
+  <meta property="og:image:width" content="1800">
+  <meta property="og:image:height" content="945">
+  <!-- Favicon -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/x-icon" href="assets/images/favicon.ico">
+
+  <!-- Police d'écriture -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Racing+Sans+One&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Nerko+One&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=News+Cycle&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Commissioner:wght@200;300;400;500;600&display=swap" rel="stylesheet">
+  <link href="https://db.onlinewebfonts.com/c/ac95f91c55cc591ecf37a4d136ff8031?family=BMWTypeNext+Pro+Regular" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles/app.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.0/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+  <script src="scripts/app.js" defer></script>
+</head>
+
+<body class="body">
+  <header class="header">
+    <img class="image image--header" src="assets/images/header_2_default.jpg"
+        srcset="assets/images/header_2_default.jpg 2x" alt="Photos de motard roulant sur une route">
+    <a href="index.html">
+      <div class="header__container container--header">
+        <h1 class="titre titre--header">Mot'au top</h1>
+        <p class="texte texte--header">Organisez, Participez, Explorez!</p>
+      </div>
+    </a>
+  </header>
+
+  <nav class="menu">
+    <button class="menu__bouton">
+      <span class="texteBtn">Menu</span>
+      <svg class="svg__burgermenu svg--active" clip-rule="evenodd" fill-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="m11 16.745c0-.414.336-.75.75-.75h9.5c.414 0 .75.336.75.75s-.336.75-.75.75h-9.5c-.414 0-.75-.336-.75-.75zm-9-5c0-.414.336-.75.75-.75h18.5c.414 0 .75.336.75.75s-.336.75-.75.75h-18.5c-.414 0-.75-.336-.75-.75zm4-5c0-.414.336-.75.75-.75h14.5c.414 0 .75.336.75.75s-.336.75-.75.75h-14.5c-.414 0-.75-.336-.75-.75z" fill-rule="nonzero"/></svg>
+      <svg class="svg__burgermenu svg--inactive" clip-rule="evenodd" fill-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="m12 10.93 5.719-5.72c.146-.146.339-.219.531-.219.404 0 .75.324.75.749 0 .193-.073.385-.219.532l-5.72 5.719 5.719 5.719c.147.147.22.339.22.531 0 .427-.349.75-.75.75-.192 0-.385-.073-.531-.219l-5.719-5.719-5.719 5.719c-.146.146-.339.219-.531.219-.401 0-.75-.323-.75-.75 0-.192.073-.384.22-.531l5.719-5.719-5.72-5.719c-.146-.147-.219-.339-.219-.532 0-.425.346-.749.75-.749.192 0 .385.073.531.219z"/></svg>
+    </button>
+    <div class="menu__liens">
+      <ul class="liens__liste">
+        <li class="liens__liste--el"><a class="el__lien" href="#premices">Prémices</a></li>
+        <li class="liens__liste--el"><a class="el__lien" href="#rencontres">Rencontres</a></li>
+        <li class="liens__liste--el"><a class="el__lien" href="#problemes">Problèmes</a></li>
+        <li class="liens__liste--el"><a class="el__lien" href="#hypotheses">Hypothèses</a></li>
+        <li class="liens__liste--el"><a class="el__lien" href="#module">Module</a></li>
+        <li class="liens__liste--el"><a class="el__lien" href="#presentation">Présentation</a></li>
+        <li class="liens__liste--el"><a class="el__lien" href="#recherches">Recherches</a></li>
+        <li class="liens__liste--el"><a class="el__lien" href="#aboutissement">Aboutissement</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main class="main main--accueil">
+    <section class="section section--premices" id="premices">
+      <h2 class="titre titre--h2">Les&nbsp;prémices</h2>
+      <div class="section__texte">
+        <p class="texte">Chaque projet débute forcément quelque part.</p>
+        <p class="texte">Notre début à nous, était tout d'abord de réfléchir à une association. Dur fut le choix, des
+          associations, car il y en a beaucoup. Association pour les gens malades, les animaux, la nature, et j'en
+          passe.
+        </p>
+        <p class="texte texte--bolder">Finalement, j'ai décidé de choisir une association de motards (oui, ça existe) qui organisent
+          des activités pour les fans de motos BMW.</p>
+      </div>
+      <div class="container--image">
+        <img class="image image--even image--text" src="assets/images/logoclub.jpg" srcset="assets/images/logoclub@2x.jpg 2x"
+          alt="Logo de BWM Clubs Belgium" title="Logo de BWM Clubs Belgium">
+      </div>
+    </section>
+
+    <section class="section section--rencontres" id="rencontres">
+      <h2 class="titre titre--h2">Il est temps de&nbsp;contacter les&nbsp; utilisateurs!</h2>
+      <div class="section__texte">
+        <p class="texte">J'ai pu contacter aisément quelqu'un de l'administration qui a été à l'écoute de mes
+          explications, et qui a facilement compris le but du
+          projet.</p>
+        <p class="texte texte--bolder">Il était vraiment gentil et m'en a appris davantage sur l'association. Il m'a montré ce qu'ils
+          faisaient comme activités, et effectivement, ils font vraiment beaucoup de balades motos.</p>
+        <p class="texte">Ayant la possibilité de contacter tous les membres, cette personne m'a aidé à rentrer en contact avec ces derniers.</p>
+      </div>
+      <div class="container--image">
+        <img class="image image--odd image--text" src="assets/images/rencontre.jpg" srcset="assets/images/rencontre@2x.jpg 2x"
+          alt="Photo de groupe des membres du club tenant le drapeau du club, avec Sébastien" title="Photo de groupe des membres du club tenant le drapeau du club, avec Sébastien">
+      </div>
+    </section>
+
+    <section class="section section--problemes" id="problemes">
+      <h2 class="titre titre--h2">Mais est-ce que les&nbsp;motards ont des&nbsp;problèmes?</h2>
+      <div class="section__texte  section__texte--sansImage">
+        <p class="texte">Pour certains, la vie est belle et ne semblait pas encombrée de problèmes vis-à-vis
+          de&nbsp;l'association.</p>
+        <p class="texte texte--bolder">Mais ce n'est pas le cas pour tout le monde. Certains d'entre eux ont effectivement des
+          problèmes, ou du mal avec certaines choses.</p>
+        <p class="texte">Par exemple&nbsp;:</p>
+        <ul class="liste liste--ul texte">
+          <li class="liste__el">Du mal à parvenir aux activités de l'association.</li>
+          <li class="liste__el">Des problèmes internes lors de trips motos.</li>
+          <li class="liste__el">Des difficultés à utiliser le site internet sur téléphone.</li>
+          <li class="liste__el">Des difficultés à être tenu au courrant lorsqu'une activité est modifiée.</li>
+          <li class="liste__el">Impossible de prévenir l'organisateur d'une activité, via le site web, lorsqu'un problème survient.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section section--hypothese" id="hypotheses">
+      <h2 class="titre titre--h2">Je réfléchis à quelque chose qui pourrait les aider.</h2>
+      <div class="section__texte section__texte--sansImage">
+        <p class="texte texte--bolder">J'ai pu élaborer tout un tas d'hypothèses grâce aux nombreuses réponses que j'ai reçues, comme les suivantes :</p>
+        <ul class="liste liste--ul texte">
+          <li class="liste__el">Création d'une application mobile simple et efficace</li>
+          <li class="liste__el">Ajouts de fonctionnalités telles que :
+            <ol class="liste liste--ol">
+              <li class="liste__el">Un bouton pour signaler un problème pendant une activité</li>
+              <li class="liste__el">Un chat par activités pour faciliter la communication</li>
+              <li class="liste__el">Un lien vers google map avec l'adresse de début et de fin de l'activité / la possibilité de télécharger le tracé GPX de l'activité.</li>
+              <li class="liste__el">Un système de notification lorsqu'une activité est modifiée</li>
+            </ol>
+          </li>
+          <li class="liste__el">L'application mobile doit pouvoir être utilisée en moto (permettre d'appuyer sur des
+            boutons avec des gants).
+          </li>
+          <li class="liste__el">Précision du type de l'activité.</li>
+          <li class="liste__el">Pouvoir s'inscrire à une activité et que celle-ci soit stocké dans une liste pour l'utilisateur</li>
+          <li class="liste__el">Pouvoir modifier une activité et en être tenu au courrant.</li>
+        </ul>
+      </div>
+
+    </section>
+
+    <section class="section section--module" id="module">
+      <h2 class="titre titre--h2">Et donc, qu'est-ce que je propose?</h2>
+      <div class="section__texte">
+        <p class="texte texte--bolder">Dans la logique des choses, et en respectant les réponses reçues, l'idée d'une application est
+          la
+          plus plausible.</p>
+        <p class="texte">Il faut bien la penser, car très peu de concurrents, du moins gratuits, proposent une idée
+          comme
+          celle-ci.</p>
+      </div>
+      <div class="container--image">
+        <img class="image  image--even image--text" src="assets/images/image_application.jpg" srcset="assets/images/image_application@2x.jpg 2x"
+          alt="Illustration du mot problem surligné et du mot solution en dessous" title="Image de Pixabay.com">
+      </div>
+    </section>
+
+    <section class="section section--presentation" id="presentation">
+      <h2 class="titre titre--h2">Qu'en penseriez-vous?</h2>
+      <div class="section__texte section__texte--sansImage">
+        <p class="texte">Ce sera le moment où je présenterai de vive voix ce que j'ai fait durant ce projet.</p>
+        <p class="texte">Aidé d'un support visuel, je pourrais enfin en parler par la voix, plutôt que par écrit, même si je n'ai pas l'habitude de parler devant un jury aussi grand.</p>
+        <p class="texte texte--bolder">J'espère pouvoir mettre mon stress de coté et pouvoir parler de mon projet sans encombres.</p>
+      </div>
+    </section>
+
+    <section class="section section--recherches" id="recherches">
+      <h2 class="titre titre--h2">Des faits et des recherches.</h2>
+      <div class="section__texte">
+        <p class="texte">Il existe maintenant de plus en plus d'applications de navigation pour les motards mais encore
+          très peu d'applications se basent sur des listes d'activités. J'ai difficilement trouvé des applications semblables aux hypothèses que j'ai
+          élaborées, ou du moins, elles étaient payantes.</p>
+        <p class="texte texte--bolder">Ces recherches m'ont permis de me focaliser plus facilement sur certaines hypothèses plutôt que
+          d'autres. Elles m'ont également permis de comprendre davantage sur certaines problèmatiques qu'énoncaient les
+          utilisateurs.</p>
+          <p class="texte">À côté de ça, un bon nombre de motards préfèrent désormais utiliser leur téléphone comme
+            système de navigation, plutôt qu'un GPS. C'est plus confortable, c'est plus pratique et c'est surtout de plus
+            en plus possible. De nos jours, il existe même des gants permettant d'interagir avec l'écran du téléphone.
+            Même si je décourage l'utilisation du téléphone en roulant, les applications restent préférées par les motards
+            lorsqu'ils sont sur la route ou à l'arrêt.</p>
+      </div>
+      <div class="container--image">
+        <img class="image image--odd  image--text" src="assets/images/image_recherche.jpg" srcset="assets/images/image_recherche@2x.jpg 2x"
+          alt="Photo d'un ordinateur avec une autre faisant une recherche Google" title="Image de Unsplash.com">
+      </div>
+    </section>
+
+    <section class="section section--aboutissement" id="aboutissement">
+      <h2 class="titre titre--h2">L'aboutissement.</h2>
+      <div class="section__texte">
+        <p class="texte">Ce projet a été un chemin d'épreuves. J'ai tenté de prendre ce projet le plus à coeur possible.
+          Je pense avoir choisis la meilleure association que je pouvais.
+        <p class="texte">Pouvoir tenter d'aider des gens au travers de ce projet m'a plu même si au début, je restais
+          assez dubitatif vis à vis
+          de ce travail.</p>
+        <p class="texte">J'avais du mal à comprendre le concept et ce qui était réellement attendu. Mais avec le temps,
+          j'ai pu voir les raisons de pourquoi ce travail est important.</p>
+      </div>
+      <div class="container--image">
+        <img class="image image--even  image--text" src="assets/images/aboutissement.jpg" srcset="assets/images/aboutissement@2x.jpg 2x"
+          alt="Photo de plusieurs moto roulant en file" title="Photo de plusieurs moto roulant en file">
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer footer--index">
+    <div class="footer__liens">
+      <div class="liens__svg">
+        <ul class="liste liste--ul footer__listeLiens">
+          <li class="listeLiens__el">
+            <a href="https://www.instagram.com/sebastien_dwt/">
+              <span class="reseaux__texte">Instagram</span>
+              <svg class="footer__svg" xmlns="http://www.w3.org/2000/svg" width="24" height="24">
+                <path
+                  d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 1 0 0 12.324 6.162 6.162 0 0 0 0-12.324zM12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.406-11.845a1.44 1.44 0 1 0 0 2.881 1.44 1.44 0 0 0 0-2.881z" />
+              </svg>
+            </a>
+          </li>
+
+          <li class="listeLiens__el">
+            <a href="https://twitter.com/sebastien_dwt">
+              <span class="reseaux__texte">Twitter</span>
+              <svg class="footer__svg" xmlns="http://www.w3.org/2000/svg" width="24" height="24">
+                <path
+                  d="M24 4.557a9.83 9.83 0 0 1-2.828.775 4.932 4.932 0 0 0 2.165-2.724 9.864 9.864 0 0 1-3.127 1.195 4.916 4.916 0 0 0-3.594-1.555c-3.179 0-5.515 2.966-4.797 6.045A13.978 13.978 0 0 1 1.671 3.149a4.93 4.93 0 0 0 1.523 6.574 4.903 4.903 0 0 1-2.229-.616c-.054 2.281 1.581 4.415 3.949 4.89a4.935 4.935 0 0 1-2.224.084 4.928 4.928 0 0 0 4.6 3.419A9.9 9.9 0 0 1 0 19.54a13.94 13.94 0 0 0 7.548 2.212c9.142 0 14.307-7.721 13.995-14.646A10.025 10.025 0 0 0 24 4.557z" />
+              </svg>
+            </a>
+          </li>
+
+          <li class="listeLiens__el">
+            <a href="mailto:sebastien.leonardi@student.heaj.be">
+              <span class="reseaux__texte">Mail</span>
+              <svg class="footer__svg" xmlns="http://www.w3.org/2000/svg" width="24" height="24">
+                <path
+                  d="M12 12.713.015 3h23.971L12 12.713zm-5.425-1.822L0 5.562v12.501l6.575-7.172zm10.85 0L24 18.063V5.562l-6.575 5.329zm-1.557 1.261L12 15.287l-3.868-3.135L.022 21h23.956l-8.11-8.848z" />
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="liens__texte"></div>
+      <ul class="liste liste--ul subNav">
+        <li class="subNav__el"> <a class="footer__lien" href="ui-kit.html">UI-kit</a></li>
+        <li class="subNav__el"> <a class="footer__lien" href="credits.html">Crédits</a></li>
+        <li class="subNav__el"> <a class="footer__lien" href="video.html">Vidéo</a></li>
+      </ul>
+    </div>
+
+    <div class="footer__small">
+      <small class="credits">
+        <a class="footer__lien" href="https://dwt.heaj.be/">DWT</a> - <a class="footer__lien" href="http://sebastien-leonardi.be">Sébastien Leonardi</a>&ensp;©
+        2023
+      </small>
+    </div>
+  </footer>
+
+</body>
+
+</html>
